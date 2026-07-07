@@ -1,10 +1,10 @@
-# BPM Nike Marketing Analysis
+# BPM Nike Analysis
 
-Đồ án môn học **Hệ thống quản trị quy trình nghiệp vụ (Business Process Management Systems)** phân tích, mô hình hóa và đề xuất cải tiến các quy trình nghiệp vụ thực tế tại bộ phận **Marketing** của Nike.
+Đồ án môn học **Hệ thống quản trị quy trình nghiệp vụ (Business Process Management Systems)** phân tích, mô hình hóa và đề xuất cải tiến các quy trình nghiệp vụ thực tế tại Nike.
 
 ## 1. Giới thiệu
 
-Nike là tập đoàn đa quốc gia hoạt động trong lĩnh vực thiết kế, sản xuất, tiếp thị và phân phối các sản phẩm thể thao. Đồ án này tập trung vào bộ phận **Marketing** của Nike, với ba mục tiêu cốt lõi:
+Nike là tập đoàn đa quốc gia hoạt động trong lĩnh vực thiết kế, sản xuất, tiếp thị và phân phối các sản phẩm thể thao. Đồ án này tập trung vào ba mục tiêu cốt lõi:
 
 - **Phân tích (Analysis):** khảo sát, mô tả và làm rõ cách các quy trình nghiệp vụ hiện đang vận hành.
 - **Mô hình hóa (Modeling):** trực quan hóa quy trình bằng chuẩn BPMN (Business Process Model and Notation).
@@ -28,7 +28,7 @@ Báo cáo được tổ chức theo 5 nội dung, bám sát rubric đánh giá c
 ### 1 — Giới thiệu công ty & Kiến trúc quy trình
 
 - Tổng quan về Nike: lịch sử, lĩnh vực kinh doanh, thành tựu nổi bật
-- Sơ đồ cơ cấu tổ chức, làm nổi bật vị trí phòng Marketing
+- Sơ đồ cơ cấu tổ chức
 - Kiến trúc quy trình tổng thể: danh sách các quy trình dự kiến phân tích theo 3 cấp
 
 ### 2 — Khám phá & Mô tả quy trình
@@ -51,7 +51,7 @@ Báo cáo được tổ chức theo 5 nội dung, bám sát rubric đánh giá c
 ### 5 — Đề xuất cải tiến & Kết luận
 
 - Bảng đề xuất khắc phục (vấn đề – mô tả – đề xuất) cho từng điểm lãng phí đã phát hiện
-- Tổng kết giá trị mang lại cho phòng Marketing của Nike
+- Tổng kết giá trị mang lại 
 
 ## 4. Công cụ sử dụng
 
