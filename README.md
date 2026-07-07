@@ -4,7 +4,7 @@
 
 ## 1. Giới thiệu
 
-Nike là tập đoàn đa quốc gia hoạt động trong lĩnh vực thiết kế, sản xuất, tiếp thị và phân phối các sản phẩm thể thao. Đồ án này tập trung vào các quy trình [ĐANG TIM HIỂU] với ba mục tiêu cốt lõi:
+Nike là tập đoàn đa quốc gia hoạt động trong lĩnh vực thiết kế, sản xuất, tiếp thị và phân phối các sản phẩm thể thao. Đồ án này tập trung vào ba mục tiêu cốt lõi:
 
 - **Phân tích (Analysis):** khảo sát, mô tả và làm rõ cách các quy trình nghiệp vụ hiện đang vận hành.
 - **Mô hình hóa (Modeling):** trực quan hóa quy trình bằng chuẩn BPMN (Business Process Model and Notation).
