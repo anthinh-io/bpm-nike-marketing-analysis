@@ -78,6 +78,7 @@ Báo cáo được tổ chức theo 5 nội dung, bám sát rubric đánh giá c
 | Nguyễn Thanh Thịnh | **[anthinh-io](https://github.com/anthinh-io)** | 22730096     |
 | Lương Triệu Khang  | **[khang-code](https://github.com/khang-code)** | 24730105     |
 | Huỳnh Gia Bảo      | **[jiabao77](https://github.com/jiabao77)**     | 24730157     |
+| Nguyễn Công Hưng   | **[nc-hung](https://github.com/nc-hung)**       | 24730100     |
 
 ## 7. Đóng góp
 
