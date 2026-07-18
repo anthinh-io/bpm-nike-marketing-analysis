@@ -68,9 +68,9 @@ Báo cáo được tổ chức theo 5 nội dung, bám sát rubric đánh giá c
 ├── docs/           # Tài liệu báo cáo, biểu mẫu khảo sát, bảng câu hỏi
 ├── diagrams/       # Sơ đồ BPMN, kiến trúc quy trình
 ├── reports/        # Bản Word/PDF hoàn chỉnh, slide thuyết trình
-├── README.md
 ├── ROADMAP.md      # Lộ trình thực hiện theo tuần, đối chiếu rubric giảng viên
-└── CONTRIBUTING.md
+└── CONTRIBUTING.md # Quy tắc đóng góp, phân công nhiệm vụ nhóm
+├── README.md
 ```
 
 ## 6. Thành viên nhóm

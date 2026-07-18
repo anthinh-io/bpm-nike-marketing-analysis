@@ -1,6 +1,6 @@
 # Contributing
 
-Hướng dẫn đóng góp cho đồ án IE203 — BPM Nike Marketing Analysis.
+Hướng dẫn đóng góp cho đồ án IE203 — BPM Nike Vietnam Analysis.
 
 ## 1. Nguyên tắc chung
 

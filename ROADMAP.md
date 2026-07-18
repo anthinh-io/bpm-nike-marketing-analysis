@@ -12,12 +12,12 @@
 
 ## 2. Mốc thời gian
 
-| Tuần                | Khoảng ngày    | Việc cần làm theo giảng viên                                                                                                            | Trạng thái                                        |
-| ------------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| 1–2                 | 06/07 – 19/07  | Lập nhóm (≥4 người), chọn công ty và lĩnh vực, tạo repo GitHub, thêm email giảng viên, phân chia công việc ban đầu                      | ✅ Hoàn tất                                       |
-| 3–5                 | 20/07 – 09/08  | Rải công việc từng tuần: liệt kê quy trình, mô tả, bắt đầu mô hình hóa                                                                  | ⏳ Đang bắt đầu (tuần hiện tại: tuần 2, 13–19/07) |
-| 6–7                 | 10/08 – 23/08  | Chuẩn bị **slide báo cáo cuối kỳ**: mỗi cấp (quản lý/cốt lõi/hỗ trợ) chọn 1 quy trình tiêu biểu để trình bày, nhận góp ý từ giảng viên  | ⏳ Sắp tới                                        |
-| +1 tuần sau báo cáo | ~24/08 – 30/08 | Chỉnh sửa theo góp ý, hoàn thiện toàn bộ báo cáo Word (10 quy trình mô tả, 6 sơ đồ BPMN, phân tích, đề xuất), nộp file Word + PDF slide | ⏳ Sắp tới                                        |
+| Tuần                | Khoảng ngày    | Việc cần làm theo giảng viên                                                                                                            | Trạng thái      |
+| ------------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| 1–2                 | 06/07 – 19/07  | Lập nhóm (≥4 người), chọn công ty và lĩnh vực, tạo repo GitHub, thêm email giảng viên, phân chia công việc ban đầu                      | ✅ Hoàn tất     |
+| 3–5                 | 20/07 – 09/08  | Rải công việc từng tuần: liệt kê quy trình, mô tả, bắt đầu mô hình hóa                                                                  | ⏳ Đang bắt đầu |
+| 6–7                 | 10/08 – 23/08  | Chuẩn bị **slide báo cáo cuối kỳ**: mỗi cấp (quản lý/cốt lõi/hỗ trợ) chọn 1 quy trình tiêu biểu để trình bày, nhận góp ý từ giảng viên  | ⏳ Sắp tới      |
+| +1 tuần sau báo cáo | ~24/08 – 30/08 | Chỉnh sửa theo góp ý, hoàn thiện toàn bộ báo cáo Word (10 quy trình mô tả, 6 sơ đồ BPMN, phân tích, đề xuất), nộp file Word + PDF slide | ⏳ Sắp tới      |
 
 ## 3. Bài học rút ra từ báo cáo mẫu
 
