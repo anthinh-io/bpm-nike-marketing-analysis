@@ -1,38 +1,75 @@
-**Chuẩn & thứ tự**
-- Bắt buộc **BPMN 2.0** (không flowchart/UML thuần).
-- **Mô tả bằng lời trước** (actors, customer, tasks theo thứ tự, outcome +/−) → **mới vẽ**.
-- Tool gợi ý: **Lucidchart** (hoặc tool BPMN tương đương).
+# Quy tắc vẽ và rà soát sơ đồ BPMN
 
-**Pool / Lane**
-- Pool: tổ chức / đối tác; Lane: vai trò, nhân viên, **hệ thống** (ERP, CRM…).
-- Activity nằm **trên lane của người/bộ phận thực hiện**.
-- Phân **internal / external** rõ (VD customer external; NV/bếp internal).
-- Mỗi phòng 1 pool **hoặc** 1 pool tổ chức + nhiều lane (nếu gộp phải thể hiện tổ chức bao trùm).
-- Giao tiếp **giữa pool**: **message flow** (nét đứt), không dùng sequence flow xuyên pool.
+## 1. Chuẩn và thứ tự thực hiện
 
-**Flow elements**
-- **Activity**: chữ nhật bo góc; tên **động từ + danh từ** (Check stock, Reject order…).
-- **Event** (start / intermediate / end): đặt tên rõ theo quy ước, **không mơ hồ**; End gắn **outcome thật** (fulfilled / rejected…), không end “giữa chừng” gây hiểu nhầm.
-- **Subprocess**: activity có dấu **+**; đóng gói thì nối vào khung; mở rộng thì **activity trong không nối thẳng** ra process cha.
-- **Start**: tròn nét đơn (**1 start** / sơ đồ đơn giản).
-- **End**: tròn nét đậm; **nhiều end** theo nhánh +/−.
-- **Intermediate**: tròn nét đôi; **Timer** khi chờ/lặp theo thời hạn.
-- **1 hình ≈ 1 quy trình**; QT lớn → chia nhỏ / subprocess.
+- [ ] Dùng đúng chuẩn **BPMN 2.0**, không dùng flowchart hoặc UML thay thế.
+- [ ] Mô tả bằng lời trước khi vẽ: tác nhân, khách hàng, trigger, các bước theo thứ tự và outcome tích cực/tiêu cực.
+- [ ] Mỗi hình thể hiện khoảng một quy trình. Quy trình lớn cần chia thành subprocess hoặc sơ đồ con.
+- [ ] Sơ đồ phải khớp với mô tả quy trình, dữ liệu khảo sát và workshop.
+- [ ] Có thể dùng Lucidchart hoặc công cụ BPMN tương đương.
+- [ ] Sơ đồ có đủ độ phức tạp theo rubric: 0 gateway = 0 điểm; dưới 3 = 0,25 điểm; 4-5 = 0,5 điểm; trên 5 = 0,75 điểm; trên 7 = 1 điểm.
 
-**Gateway (XOR / AND / OR)**
-- **XOR**: đúng **1** nhánh (if/switch).
-- **AND** (dấu +): **song song**, join khi **tất cả** nhánh xong.
-- **OR**: một hoặc nhiều nhánh theo điều kiện.
-- **Split phải join** (trừ nhánh end ngay sau split). Quên join = lỗi nặng.
-- Gắn **label điều kiện** trên từng nhánh ra.
+## 2. Pool và lane
 
-**Connecting objects & data**
-- **Sequence flow**: nét liền + mũi tên, trong cùng pool/process.
-- **Message flow**: nét đứt **chỉ giữa pool** (PO, invoice, thông báo…); không thay sequence trong cùng pool; không sequence xuyên pool.
-- **Association**: gắn data / annotation.
-- Data object (file), collection (3 gạch), data store (hình trụ); mũi tên **rỗng = input**, **đặc = output**.
+- [ ] Pool đại diện cho tổ chức hoặc đối tác; lane đại diện cho vai trò, bộ phận hoặc hệ thống như ERP, CRM.
+- [ ] Phân biệt rõ pool nội bộ và pool bên ngoài, ví dụ khách hàng hoặc đối tác.
+- [ ] Có thể dùng mỗi tổ chức một pool với nhiều lane. Nếu gộp nhiều bộ phận, pool phải thể hiện rõ tổ chức bao trùm.
+- [ ] Mọi tác nhân trong mô tả quy trình đều có pool hoặc lane tương ứng.
+- [ ] Mỗi activity nằm trong lane của người, bộ phận hoặc hệ thống thực hiện, không để activity nằm ngoài lane.
+- [ ] Thuật ngữ về vai trò phải nhất quán giữa các sơ đồ, ví dụ chỉ dùng một tên là "Nhân viên kho".
 
-**Khi vẽ**
-- Luôn có nhánh **Positive / Negative** → gateway + end tương ứng.
-- Sơ đồ phải **khớp mô tả/workshop** đã viết.
-- Lỗi hay gặp khi vẽ: sai ký hiệu / pool-lane / đặt tên / đường vẽ; **split không join** = lỗi nặng.
+## 3. Activity và subprocess
+
+- [ ] Activity dùng hình chữ nhật bo góc.
+- [ ] Tên activity theo cấu trúc **Động từ + Danh từ/Tân ngữ**, ví dụ "Kiểm tra tồn kho".
+- [ ] Tránh tên mơ hồ như "Xử lý", "Ghi lại" hoặc "Thực hiện".
+- [ ] Không tách nhiều sequence flow trực tiếp từ activity khi các luồng biểu diễn kết quả khác nhau; phải dùng gateway.
+- [ ] Activity phức tạp được mô hình hóa thành subprocess và có dấu **+**.
+- [ ] Với subprocess đóng, luồng chỉ nối vào khung subprocess.
+- [ ] Với subprocess mở rộng, activity bên trong không nối trực tiếp ra process cha.
+
+## 4. Event
+
+- [ ] Start event là hình tròn nét đơn; sơ đồ đơn giản chỉ dùng một start event.
+- [ ] Intermediate event là hình tròn nét đôi; dùng timer event khi có bước chờ hoặc lặp theo thời hạn.
+- [ ] End event là hình tròn nét đậm và phải thể hiện outcome thật, ví dụ "Đơn hàng đã hoàn tất" hoặc "Đơn hàng đã từ chối".
+- [ ] Có thể dùng nhiều end event cho các nhánh tích cực và tiêu cực.
+- [ ] Tên event mô tả trạng thái đã xảy ra, ví dụ "Đơn hàng đã nhận", không đặt như tên activity.
+- [ ] Message event dùng đúng ký hiệu phong bì: rỗng là nhận, tô đen là gửi.
+- [ ] Không đặt end event giữa quy trình nếu luồng nghiệp vụ thực tế vẫn tiếp tục.
+
+## 5. Gateway
+
+- [ ] Dùng **XOR** khi chỉ đúng một nhánh được chọn.
+- [ ] Dùng **AND** khi tất cả nhánh chạy song song và chỉ tiếp tục sau khi mọi nhánh hoàn tất.
+- [ ] Dùng **OR** khi một hoặc nhiều nhánh có thể được chọn.
+- [ ] Mỗi nhánh ra từ XOR hoặc OR đều có nhãn điều kiện.
+- [ ] Split phải có join tương ứng cùng loại, trừ nhánh kết thúc ngay sau split.
+- [ ] Không split bằng OR rồi join bằng AND hoặc ghép sai loại gateway.
+- [ ] Có nhánh tích cực và tiêu cực khi quy trình có cả hai outcome.
+
+## 6. Luồng kết nối
+
+- [ ] Sequence flow là nét liền có mũi tên và chỉ dùng trong cùng một pool.
+- [ ] Không dùng sequence flow xuyên ranh giới giữa hai pool.
+- [ ] Message flow là nét đứt và chỉ dùng để trao đổi giữa các pool, ví dụ gửi đơn hàng, hóa đơn hoặc thông báo.
+- [ ] Không dùng message flow để nối các activity trong cùng một pool.
+- [ ] Không nối trực tiếp từ bên ngoài vào activity ẩn bên trong subprocess.
+- [ ] Đường nối rõ ràng, hạn chế giao cắt và không gây hiểu sai thứ tự thực hiện.
+
+## 7. Dữ liệu
+
+- [ ] Data object biểu diễn file hoặc hồ sơ; collection có ba gạch; data store dùng hình trụ.
+- [ ] Mỗi đối tượng dữ liệu có data association nối với ít nhất một activity.
+- [ ] Association được dùng để nối dữ liệu hoặc annotation, không thay cho sequence flow.
+- [ ] Hướng dữ liệu nhất quán: mũi tên rỗng là input, mũi tên đặc là output.
+
+## 8. Rà soát trước khi nộp
+
+- [ ] Đối chiếu với rubric, đặc biệt là số gateway, cách đặt tên và chuẩn ký hiệu.
+- [ ] Kiểm tra mọi split và join, vì thiếu join là lỗi logic nghiêm trọng.
+- [ ] Kiểm tra tên tác nhân, activity, event và dữ liệu khớp với phần mô tả bằng lời.
+- [ ] Kiểm tra pool, lane, sequence flow và message flow đúng phạm vi.
+- [ ] Kiểm tra không có dữ liệu mồ côi hoặc ký hiệu sai hình dạng.
+- [ ] So khớp cách đặt tên pool và lane giữa các thành viên trong nhóm.
+- [ ] Đảm bảo sơ đồ đủ rõ, dễ đọc và không để AI tạo tự do rồi nộp nguyên.
